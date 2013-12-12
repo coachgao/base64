@@ -46,6 +46,7 @@ def decodeBase64(src, encode="utf-8"):
 	
 if __name__ == "__main__":
 
+	#test
 	str = encodeBase64("base64", "ascii")
 	print(str)
 	print(decodeBase64(str, "ascii"))
