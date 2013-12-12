@@ -3,7 +3,7 @@
 code = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 
 def encodeBase64(src, encode="utf-8"):
-
+	
 	global code
 
 	paddingTail = {0:'', 8:'0000', 16:'00'}
@@ -44,19 +44,4 @@ def decodeBase64(src, encode="utf-8"):
 	return output
 
 	
-if __name__ == "__main__":
-
-	#test
-	str = encodeBase64("base64", "ascii")
-	print(str)
-	print(decodeBase64(str, "ascii"))
-
-
-
-
-
-
-
-
-
 
